@@ -1,0 +1,24 @@
+{
+  "name": "phoenix-kyc-service",
+  "version": "1.0.0",
+  "description": "phoenix-kyc-service",
+  "main": "index.js",
+  "scripts": {
+    "mock": "node test/mock",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BTCChina/phoenix-kyc-service.git"
+  },
+  "author": "JACK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BTCChina/phoenix-kyc-service/issues"
+  },
+  "homepage": "https://github.com/BTCChina/phoenix-kyc-service#readme",
+  "devDependencies": {
+    "http": "0.0.0",
+    "mockserver": "^1.5.2"
+  }
+}
