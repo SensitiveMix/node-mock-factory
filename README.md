@@ -6,7 +6,7 @@
  / .___/ /_/ /_/ \____/ \___/ /_/ /_/ /_/   /_/|_|         /_/ /_/ /_/ \____/ \___/  /_/|_|  
 /_/                                                                                          
 ```
-[![CircleCI](https://circleci.com/gh/BTCChina/phoenix-kyc-service.svg?style=svg)](https://circleci.com/gh/BTCChina/phoenix-kyc-service)
+[![CircleCI](https://circleci.com/gh/BTCChina/phoenix-kyc-service/tree/jack-dev.svg?style=shield&circle-token=1df8b30b1ebc76cf3fa27ac09ed65a21dc9a52d2)](https://circleci.com/gh/BTCChina/phoenix-kyc-service/tree/jack-dev)
 [![Coverage Status](https://coveralls.io/repos/github/BTCChina/phoenix-kyc-service/badge.svg?branch=jack-dev&t=gfYVZa)](https://coveralls.io/github/BTCChina/phoenix-kyc-service?branch=jack-dev)
 
 light weight mock factory  for taking advantage of the built-in phoenix mock service in node v6.8.0.Focus on Automatic Generation.
