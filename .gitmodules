@@ -1,0 +1,3 @@
+[submodule "phoenix-conf-store"]
+	path = phoenix-conf-store
+	url = git@github.com:BTCChina/phoenix-conf-store.git
