@@ -1,10 +1,10 @@
 ```bash
-             __                           _                                              __  
-    ____    / /_   ____   ___    ____    (_)   _  __          ____ ___   ____   _____   / /__
-   / __ \  / __ \ / __ \ / _ \  / __ \  / /   | |/_/ ______  / __ `__ \ / __ \ / ___/  / //_/
-  / /_/ / / / / // /_/ //  __/ / / / / / /   _>  <  /_____/ / / / / / // /_/ // /__   / ,<   
- / .___/ /_/ /_/ \____/ \___/ /_/ /_/ /_/   /_/|_|         /_/ /_/ /_/ \____/ \___/  /_/|_|  
-/_/                                                                                          
+                              __             ____                  __
+   ____ ___   ____   _____   / /__          / __/  ____ _  _____  / /_  ____    _____   __  __
+  / __ `__ \ / __ \ / ___/  / //_/ ______  / /_   / __ `/ / ___/ / __/ / __ \  / ___/  / / / /
+ / / / / / // /_/ // /__   / ,<   /_____/ / __/  / /_/ / / /__  / /_  / /_/ / / /     / /_/ /
+/_/ /_/ /_/ \____/ \___/  /_/|_|         /_/     \__,_/  \___/  \__/  \____/ /_/      \__, /
+                                                                                     /____/
 ```
 [![CircleCI](https://circleci.com/gh/BTCChina/phoenix-kyc-service/tree/jack-dev.svg?style=shield&circle-token=1df8b30b1ebc76cf3fa27ac09ed65a21dc9a52d2)](https://circleci.com/gh/BTCChina/phoenix-kyc-service/tree/jack-dev)
 [![Coverage Status](https://coveralls.io/repos/github/BTCChina/phoenix-kyc-service/badge.svg?branch=jack-dev&t=gfYVZa)](https://coveralls.io/github/BTCChina/phoenix-kyc-service?branch=jack-dev)
@@ -12,19 +12,9 @@
 light weight mock factory  for taking advantage of the built-in phoenix mock service in node v6.8.0.Focus on Automatic Generation.
 
 
-### Contains Mock Server
-- [x] [apn](http://172.20.10.160:9001/apn)
-- [x] [kyc](http://172.20.10.160:9001/kyc)
-- [x] [sms](http://172.20.10.160:9001/sms)
-- [x] [mail](http://172.20.10.160:9001/mail)
-- [x] [sitemsg](http://172.20.10.160:9001/sitemsg)
-- [x] [uploadphoto](http://172.20.10.160:9001/photo/upload)
-- [x] [authorization](http://172.20.10.160:9001/authorization)
-- [x] [3rd Party Verify](http://172.20.10.160:9001/tpv)
-
 ## Installation
 ```bash
-git clone git@github.com:BTCChina/phoenix-kyc-service.git
+git clone git@github.com:sunNode/node-mock-factory.git
 ```
 
 
@@ -44,7 +34,7 @@ Initialize phoenix mock plugin with mock cfg, with the given options.
 ## Template Config
 ```bash
 {
-    'PATH':'./test/mocks',
+    'PATH':'./src/mocks',
     'PORT':'9001',
     "SERVICES":[
     {
@@ -59,12 +49,28 @@ Initialize phoenix mock plugin with mock cfg, with the given options.
           "method": "POST",
           "resHeader": "HTTP/1.1 200 OK",
           "resContent": "{ succeed: true,msg: ok }"
+        },
+        {
+          "method": "GET--a=b.mock",
+          "resHeader": "HTTP/1.1 200 OK",
+          "resContent": "{ succeed: true,msg: ok }"
         }
       ]
     }
     ]
 }
 ```
+
+Options:
+  - `method`  Request Method
+  - `GET--a=b.mock` Request GET /hello?a=b
+  - `resHeader`  Response Header
+  - `resContent` Response Content
+
+
+## Reference
+
+[mock-server](https://github.com/namshi/mockserver)
 
 ## LICENSE
 MIT License

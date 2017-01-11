@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
         {
-            name: "phoenix-mocks",
+            name: "mock",
             script: "./src/mock.js",
             env: {
                 "NODE_ENV": "staging",

@@ -1,6 +1,6 @@
 const rmdir = require('rimraf')
 const async = require('async')
-const cfg = require('../../phoenix-conf-store/mock')
+const cfg = require('../config')
 
 class CleanMock {
 

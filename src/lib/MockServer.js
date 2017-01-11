@@ -4,7 +4,7 @@ const mkdirp = require('mkdirp')
 const touch = require('touch')
 const fs = require('fs')
 const async = require('async')
-const cfg = require('../../phoenix-conf-store/mock')
+const cfg = require('../config')
 
 class MockServer {
 

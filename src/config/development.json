@@ -1,0 +1,22 @@
+{
+  "env": "dev",
+  "PATH": "./src/mocks",
+  "PORT": "9001",
+  "SERVICES": [
+    {
+      "name": "APN",
+      "Handlers": [
+        {
+          "method": "GET",
+          "resHeader": "HTTP/1.1 200 OK",
+          "resContent": "{ succeed: true,msg: ok }"
+        },
+        {
+          "method": "POST",
+          "resHeader": "HTTP/1.1 200 OK",
+          "resContent": "{ succeed: true, msg: ok }"
+        }
+      ]
+    }
+  ]
+}

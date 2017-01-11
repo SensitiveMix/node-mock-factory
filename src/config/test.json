@@ -1,0 +1,50 @@
+{
+  "env": "test",
+  "PATH": "./test/mocks",
+  "PORT": "9001",
+  "SERVICES": [
+    {
+      "name": "test",
+      "Handlers": [
+        {
+          "method": "GET",
+          "resHeader": "HTTP/1.1 200 OK",
+          "resContent": "{ succeed: true,msg: ok }"
+        },
+        {
+          "method": "POST",
+          "resHeader": "HTTP/1.1 200 OK",
+          "resContent": "{ succeed: true,msg: ok }"
+        }
+      ]
+    },{
+      "name": "multi/multi",
+      "Handlers": [
+        {
+          "method": "GET",
+          "resHeader": "HTTP/1.1 200 OK",
+          "resContent": "{ succeed: true,msg: ok }"
+        },
+        {
+          "method": "POST",
+          "resHeader": "HTTP/1.1 200 OK",
+          "resContent": "{ succeed: true,msg: ok }"
+        }
+      ]
+    },{
+      "name": "test-path",
+      "Handlers": [
+        {
+          "method": "",
+          "resHeader": "HTTP/1.1 200 OK",
+          "resContent": "{ succeed: true,msg: ok }"
+        },
+        {
+          "method": "",
+          "resHeader": "HTTP/1.1 200 OK",
+          "resContent": "{ succeed: true,msg: ok }"
+        }
+      ]
+    }
+  ]
+}
