@@ -13,7 +13,7 @@ light weight mock factory  for taking advantage of the built-in phoenix mock ser
 
 
 ### Contains Mock Server
-- [x] [APN](http://172.20.10.160:9001/apn)
+- [x] [apn](http://172.20.10.160:9001/apn)
 - [x] [kyc](http://172.20.10.160:9001/kyc)
 - [x] [sms](http://172.20.10.160:9001/sms)
 - [x] [mail](http://172.20.10.160:9001/mail)
