@@ -2,8 +2,8 @@ const expect = require('expect')
 const CleanServer = require('../src/lib/CleanMock')
 
 
-describe('Test Generate Mock', () => {
-    it('should resolve requests with valid create', function (done) {
+describe('Test Clean Mock', () => {
+    it('should resolve requests with Clean', function (done) {
         let mockTest = new Promise((resolve, reject) => {
             let mock = new CleanServer()
             mock.clean()
