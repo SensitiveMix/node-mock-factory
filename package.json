@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "mock": "node test/mock",
+    "clean": "node test/mock",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +19,12 @@
   },
   "homepage": "https://github.com/BTCChina/phoenix-kyc-service#readme",
   "devDependencies": {
+    "async": "^2.1.4",
     "http": "0.0.0",
-    "mockserver": "^1.5.2"
+    "mkdirp": "^0.5.1",
+    "mockserver": "^1.5.2",
+    "multiline": "^1.0.2",
+    "rimraf": "^2.5.4",
+    "touch": "^1.0.0"
   }
 }

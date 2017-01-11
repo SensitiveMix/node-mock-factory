@@ -1,5 +1,9 @@
-const http = require('http');
-const mockserver = require('mockserver');
+const MockServer = require('./lib/MockServer')
+
+let mockServer = new MockServer()
+
+mockServer.serve()
 
 
-http.createServer(mockserver('./test/mocks')).listen(9001);
+
+
