@@ -1,0 +1,11 @@
+machine:
+    node:
+        version: 6.9.1
+general:
+    artifacts:
+        - ./coverage
+checkout:
+    post:
+        - git submodule init
+        - git submodule update
+        - git submodule foreach git pull origin master

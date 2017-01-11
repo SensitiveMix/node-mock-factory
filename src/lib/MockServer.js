@@ -4,7 +4,7 @@ const mkdirp = require('mkdirp')
 const touch = require('touch')
 const fs = require('fs')
 const async = require('async')
-const cfg = require('../config/cfg.json')
+const cfg = require('../../phoenix-conf-store/mock')
 
 class MockServer {
 
@@ -17,7 +17,7 @@ class MockServer {
     }
 
     _processMkdir(service, callback) {
-        mkdirp(`./test/mocks/${service.name}`, (err) => {
+        mkdirp(`${cfg.PATH}/${service.name}`, (err) => {
             if (err) console.error(err)
             MockServer._processWriteMock(service, callback)
         })
