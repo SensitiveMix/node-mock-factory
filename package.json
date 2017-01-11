@@ -1,23 +1,23 @@
 {
-  "name": "phoenix-kyc-service",
+  "name": "node-mock-factory",
   "version": "1.0.0",
-  "description": "phoenix-kyc-service",
+  "description": "node-mock-factory",
   "main": "index.js",
   "scripts": {
-    "mock": "node src/mock",
-    "clean": "node src/clean",
+    "mock": "NODE_ENV=develop node src/mock",
+    "clean": "NODE_ENV=develop node src/clean",
     "test": "NODE_ENV=test node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BTCChina/phoenix-kyc-service.git"
+    "url": "git@github.com:sunNode/node-mock-factory.git"
   },
   "author": "JACK",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BTCChina/phoenix-kyc-service/issues"
+    "url": "https://github.com/sunNode/node-mock-factory/issues"
   },
-  "homepage": "https://github.com/BTCChina/phoenix-kyc-service#readme",
+  "homepage": "https://github.com/sunNode/node-mock-factory#readme",
   "devDependencies": {
     "async": "^2.1.4",
     "chai": "^3.5.0",
