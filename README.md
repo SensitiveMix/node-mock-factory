@@ -69,8 +69,8 @@ Options:
   - `GET--a=b.mock` Request GET /hello?a=b
   - `resHeader`  Response Header
   - `resContent` Response Content
-
-> when post request
+  
+### POST ACTION 
 
 * request
 
@@ -103,7 +103,7 @@ curl -X POST -D { hello:'world' } -H "<prefix>/api/v1/login"
 }
 ```
 
-> when get request
+### GET ACTION 
 
 * request
 
