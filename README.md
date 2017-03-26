@@ -67,10 +67,72 @@ Options:
   - `resHeader`  Response Header
   - `resContent` Response Content
 
+> when post request
 
-## Reference
+* request
 
-[mock-server](https://github.com/namshi/mockserver)
+```javascript
+curl -X POST -D { hello:'world' } -H "<prefix>/api/v1/login"
+```
+
+* config
+
+```bash
+{
+    "name": "api/v1/login",
+    "Handlers": [
+        {
+            "method": "POST--Hello=World",
+            "resHeader": "HTTP/1.1 200 OK",
+            "resContent": "{ succeed: true,msg: ok }"
+        }
+    ]
+}
+```
+
+* response
+
+`http status` 200
+```javascript
+{
+    succeed: true,
+    msg: ok
+}
+```
+
+> when get request
+
+* request
+
+```javascript
+curl -X GET -H "<prefix>/api/v1/login?hello=world"
+```
+
+* config
+
+```bash
+{
+    "name": "api/v1/login",
+    "Handlers": [
+        {
+            "method": "GET--Hello=World",
+            "resHeader": "HTTP/1.1 200 OK",
+            "resContent": "{ succeed: true,msg: ok }"
+        }
+    ]
+}
+```
+
+* response
+
+`http status` 200
+```javascript
+{
+    succeed: true,
+    msg: ok
+}
+```
+
 
 ## LICENSE
 MIT License
