@@ -4,8 +4,8 @@
   "description": "node-mock-factory",
   "main": "index.js",
   "scripts": {
-    "mock": "NODE_ENV=develop node src/mock",
-    "clean": "NODE_ENV=develop node src/clean",
+    "mock": "NODE_ENV=development node src/mock",
+    "clean": "NODE_ENV=development node src/clean",
     "test": "NODE_ENV=test node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
