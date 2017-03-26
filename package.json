@@ -6,7 +6,7 @@
   "scripts": {
     "mock": "NODE_ENV=development node src/mock",
     "clean": "NODE_ENV=development node src/clean",
-    "test": "NODE_ENV=test node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "test": "node_modules/standard/bin/cmd.js && NODE_ENV=test node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,12 @@
     "mockserver": "^1.5.2",
     "multiline": "^1.0.2",
     "rimraf": "^2.5.4",
+    "standard": "^9.0.2",
     "touch": "^1.0.0"
+  },
+  "standard": {
+    "ignore": [
+      "/test/"
+    ]
   }
 }

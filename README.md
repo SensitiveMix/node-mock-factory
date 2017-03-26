@@ -8,7 +8,7 @@
 ```
 [![CircleCI](https://circleci.com/gh/SensitiveMix/node-mock-factory/tree/master.svg?style=shield&circle-token=18fe4ac495f7430045c2f9e57f33acd7b866023a)](https://circleci.com/gh/SensitiveMix/node-mock-factory/tree/master)
 [![Coverage Status](https://coveralls.io/repos/github/BTCChina/phoenix-kyc-service/badge.svg?branch=jack-dev&t=gfYVZa)](https://coveralls.io/github/BTCChina/phoenix-kyc-service?branch=jack-dev)
-
+[![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 light weight mock factory  for taking advantage of the built-in phoenix mock service in node v6.8.0.Focus on Automatic Generation.
 
 
