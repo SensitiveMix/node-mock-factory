@@ -45,6 +45,20 @@
           "resContent": "{ succeed: true,msg: ok }"
         }
       ]
+    },{
+      "name": "hello",
+      "Handlers": [
+        {
+          "method": "GET--a=b",
+          "resHeader": "HTTP/1.1 200 OK",
+          "resContent": "{ succeed: true,msg: ok }"
+        },
+        {
+          "method": "POST--Hello=World",
+          "resHeader": "HTTP/1.1 200 OK",
+          "resContent": "{ succeed: true,msg: ok }"
+        }
+      ]
     }
   ]
 }
