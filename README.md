@@ -136,6 +136,11 @@ curl -X GET -H "<prefix>/api/v1/login?hello=world"
 }
 ```
 
+## Deployment
+```javascript
+sneaky d dev
+```
+
 
 ## LICENSE
 MIT License
