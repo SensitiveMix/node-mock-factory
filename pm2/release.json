@@ -1,0 +1,6 @@
+[{
+  "name": "teambition-tool-swagger-release",
+  "script": "./app.js",
+  "exec_mode": "cluster_mode",
+  "instances": 2
+}]

@@ -1,0 +1,8 @@
+[
+  {
+    "name": "teambition-tool-mock",
+    "script": "../source/src/mock.js",
+    "exec_mode": "cluster_mode",
+    "instances": 1
+  }
+]
