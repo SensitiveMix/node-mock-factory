@@ -17,7 +17,7 @@ light weight mock factory  for taking advantage of the built-in phoenix mock ser
 
 ## Installation
 ```bash
-git clone git@github.com:SensitiveMix/node-mock-factory.git
+git clone git@code.teambition.com:tools/mock_server.git
 ```
 
 
