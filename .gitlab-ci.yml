@@ -1,0 +1,31 @@
+before_script:
+  - node -v && npm -v && sneaky -v
+  - npm set registry http://npm.dev22
+  - yarn config set registry http://npm.dev22
+  - ls -la
+  - yarn config set cache-folder .yarn
+  - yarn install --prefer-offline
+cache:
+  key: "$CI_PROJECT_PATH/$CI_PROJECT_ID"
+  untracked: true
+  paths:
+    - node_modules/
+    - .cdnUploaderCache
+    - .yarn/
+stages:
+  - test    # 单元测试
+  - deploy  # 编译发布
+deploy_21:
+  stage: deploy
+  only:
+    - /^master\/.*$/
+  script:
+    - sneaky d dev
+  tags:
+    - node4
+test:
+  stage: test
+  script:
+    - yarn test
+  tags:
+    - node6
