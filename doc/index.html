@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>node-mock-factory Documentation</title>
+    <meta name="keywords" content="node-mock-factory" />
+    <meta name="description" content="node-mock-factory" />
+    <script src="assets/prettify.js"></script>
+    <script src="assets/jquery-1.8.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/base.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top top-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">node-mock-factory</a>
+        </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          
+          
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+    <header class="jumbotron subhead">
+      <div class="container">
+        <h1>node-mock-factory <small>Version: 1.1.1 By @JACK</small></h1>
+        <p class="lead">
+          node-mock-factory
+        </p>
+      </div>
+    </header>
+
+<div class="container content">
+  <div class="row">
+  	<div class="col-md-3">
+      <ul class="nav nav-list bs-docs-sidenav affix">
+
+  <li class="level_2">
+    <a href="#index_Installation" title="Installation">
+      <i class="icon-chevron-right"></i>Installation
+    </a>
+  </li>
+
+  <li class="level_2">
+    <a href="#index_Install dependencies:" title="Install dependencies:">
+      <i class="icon-chevron-right"></i>Install dependencies:
+    </a>
+  </li>
+
+  <li class="level_2">
+    <a href="#index_Usage" title="Usage">
+      <i class="icon-chevron-right"></i>Usage
+    </a>
+  </li>
+
+  <li class="level_2">
+    <a href="#index_Template Config" title="Template Config">
+      <i class="icon-chevron-right"></i>Template Config
+    </a>
+  </li>
+
+  <li class="level_2">
+    <a href="#index_Deployment" title="Deployment">
+      <i class="icon-chevron-right"></i>Deployment
+    </a>
+  </li>
+
+  <li class="level_2">
+    <a href="#index_LICENSE" title="LICENSE">
+      <i class="icon-chevron-right"></i>LICENSE
+    </a>
+  </li>
+
+</ul>
+
+    </div>
+    <div class="col-md-9">
+      <section>
+        <pre><code class="lang-bash">                              __             ____                  __
+   ____ ___   ____   _____   / /__          / __/  ____ _  _____  / /_  ____    _____   __  __
+  / __ `__ \ / __ \ / ___/  / //_/ ______  / /_   / __ `/ / ___/ / __/ / __ \  / ___/  / / / /
+ / / / / / // /_/ // /__   / ,&lt;   /_____/ / __/  / /_/ / / /__  / /_  / /_/ / / /     / /_/ /
+/_/ /_/ /_/ \____/ \___/  /_/|_|         /_/     \__,_/  \___/  \__/  \____/ /_/      \__, /
+                                                                                     /____/
+</code></pre>
+<p><a href="https://circleci.com/gh/SensitiveMix/node-mock-factory/tree/master"><img src="https://circleci.com/gh/SensitiveMix/node-mock-factory/tree/master.svg?style=shield&amp;circle-token=18fe4ac495f7430045c2f9e57f33acd7b866023a" alt="CircleCI"></a>
+<a href="https://coveralls.io/github/BTCChina/phoenix-kyc-service?branch=jack-dev"><img src="https://coveralls.io/repos/github/BTCChina/phoenix-kyc-service/badge.svg?branch=jack-dev&amp;t=gfYVZa" alt="Coverage Status"></a></p>
+<p><a href="https://github.com/feross/standard"><img src="https://cdn.rawgit.com/feross/standard/master/badge.svg" alt="Standard - JavaScript Style Guide"></a></p>
+<p>light weight mock factory  for taking advantage of the built-in phoenix mock service in node v6.8.0.Focus on Automatic Generation.</p>
+<h2 id="installation">Installation</h2>
+<pre><code class="lang-bash">git clone git@code.teambition.com:tools/mock_server.git
+</code></pre>
+<h2 id="install-dependencies-">Install dependencies:</h2>
+<pre><code class="lang-bash">npm install
+</code></pre>
+<h2 id="usage">Usage</h2>
+<p>Initialize phoenix mock plugin with mock cfg, with the given options.</p>
+<p> Options:</p>
+<ul>
+<li><code>npm run mock</code>  Generate Mock Server</li>
+<li><code>npm run clean</code> Clean Mock Server</li>
+</ul>
+<h2 id="template-config">Template Config</h2>
+<pre><code class="lang-bash">{
+    &#39;PATH&#39;:&#39;./src/mocks&#39;,
+    &#39;PORT&#39;:&#39;9001&#39;,
+    &quot;SERVICES&quot;:[
+    {
+      &quot;name&quot;: &quot;authorization&quot;,
+      &quot;Handlers&quot;: [
+        {
+          &quot;method&quot;: &quot;GET&quot;,
+          &quot;resHeader&quot;: &quot;HTTP/1.1 200 OK&quot;,
+          &quot;resContent&quot;: &quot;{ succeed: true,msg: ok }&quot;
+        },
+        {
+          &quot;method&quot;: &quot;POST&quot;,
+          &quot;resHeader&quot;: &quot;HTTP/1.1 200 OK&quot;,
+          &quot;resContent&quot;: &quot;{ succeed: true,msg: ok }&quot;
+        },
+        {
+          &quot;method&quot;: &quot;GET--a=b.mock&quot;,
+          &quot;resHeader&quot;: &quot;HTTP/1.1 200 OK&quot;,
+          &quot;resContent&quot;: &quot;{ succeed: true,msg: ok }&quot;
+        }
+      ]
+    }
+    ]
+}
+</code></pre>
+<p>Options:</p>
+<ul>
+<li><code>method</code>  Request Method</li>
+<li><code>GET--a=b.mock</code> Request GET /hello?a=b</li>
+<li><code>resHeader</code>  Response Header</li>
+<li><code>resContent</code> Response Content</li>
+</ul>
+<h3 id="post-action">POST ACTION</h3>
+<ul>
+<li>request</li>
+</ul>
+<pre><code class="lang-javascript">curl -X POST -D { hello:&#39;world&#39; } -H &quot;&lt;prefix&gt;/api/v1/login&quot;
+</code></pre>
+<ul>
+<li>config</li>
+</ul>
+<pre><code class="lang-bash">{
+    &quot;name&quot;: &quot;api/v1/login&quot;,
+    &quot;Handlers&quot;: [
+        {
+            &quot;method&quot;: &quot;POST--Hello=World&quot;,
+            &quot;resHeader&quot;: &quot;HTTP/1.1 200 OK&quot;,
+            &quot;resContent&quot;: &quot;{ succeed: true,msg: ok }&quot;
+        }
+    ]
+}
+</code></pre>
+<ul>
+<li>response</li>
+</ul>
+<p><code>http status</code> 200</p>
+<pre><code class="lang-javascript">{
+    succeed: true,
+    msg: ok
+}
+</code></pre>
+<h3 id="get-action">GET ACTION</h3>
+<ul>
+<li>request</li>
+</ul>
+<pre><code class="lang-javascript">curl -X GET -H &quot;&lt;prefix&gt;/api/v1/login?hello=world&quot;
+</code></pre>
+<ul>
+<li>config</li>
+</ul>
+<pre><code class="lang-bash">{
+    &quot;name&quot;: &quot;api/v1/login&quot;,
+    &quot;Handlers&quot;: [
+        {
+            &quot;method&quot;: &quot;GET--Hello=World&quot;,
+            &quot;resHeader&quot;: &quot;HTTP/1.1 200 OK&quot;,
+            &quot;resContent&quot;: &quot;{ succeed: true,msg: ok }&quot;
+        }
+    ]
+}
+</code></pre>
+<ul>
+<li>response</li>
+</ul>
+<p><code>http status</code> 200</p>
+<pre><code class="lang-javascript">{
+    succeed: true,
+    msg: ok
+}
+</code></pre>
+<h2 id="deployment">Deployment</h2>
+<pre><code class="lang-javascript">sneaky d dev
+</code></pre>
+<h2 id="license">LICENSE</h2>
+<p>MIT License</p>
+<p>Copyright (c) 2017 Jack Sun</p>
+
+      </section>
+  
+    </div>
+  </div>
+</div>
+      <footer class="footer">
+        <div class="container">
+          <p class="pull-right">
+            <a href="#">Back to top</a>
+          </p>
+          <p>此文档通过doxmate生成。主题借鉴Bootstrap API文档风格，注解基于<a href="https://github.com/visionmedia/dox">Dox</a>。欢迎关注doxmate作者<a href="http://weibo.com/shyvo" target="_blank">@朴灵</a></p>
+          <ul class="footer-links">
+            <li><a href="https://github.com/visionmedia/dox">Dox主页</a></li>
+            <li><a href="http://html5ify.com/doxmate">Doxmate主页</a></li>
+            <li><a href="https://github.com/JacksonTian/doxmate">Doxmate源码</a></li>
+            <li><a href="https://github.com/JacksonTian/doxmate/issues?state=open">提交bug</a></li>
+          </ul>
+      </div>
+    </footer>
+    <script>
+      $(function() {
+        $('pre').addClass('prettyprint');
+        $('td pre').removeClass('prettyprint');
+        prettyPrint();
+        var $window = $(window);
+        var sidenav = $('.bs-docs-sidenav');
+        if (sidenav.height() < window.innerHeight) {
+          sidenav.affix({
+            offset: {
+              top: function () {
+                return $window.width() <= 980 ? 290 : 210
+              },
+              bottom: 200
+            }
+          });
+        } else {
+          sidenav.removeClass('affix');
+        }
+        $(".content").find('h1, h2, h3, h4, h5, h6').each(function () {
+          var node = $(this);
+          // 总是设置id
+          node.attr("id", node.data('id') || "index_" + node.text());
+        });
+
+        $('.bs-docs-sidenav .accordion-marker').on('click', function(event) {
+          var current = $(event.currentTarget);
+          current.find('.glyphicon').toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
+        });
+      });
+    </script>
+  
+  </body>
+</html>
+
