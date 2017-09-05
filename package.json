@@ -22,7 +22,7 @@
     "async": "^2.1.4",
     "chai": "^4.0.2",
     "coveralls": "^2.11.15",
-    "expect": "^1.20.2",
+    "expect": "^21.0.0",
     "http": "0.0.0",
     "istanbul": "^0.4.5",
     "istanbul-harmony": "^0.3.16",
