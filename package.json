@@ -28,7 +28,7 @@
     "istanbul-harmony": "^0.3.16",
     "mkdirp": "^0.5.1",
     "mocha": "^5.0.2",
-    "mockserver": "^1.5.2",
+    "mockserver": "^1.7.0",
     "multiline": "^1.0.2",
     "rimraf": "^2.5.4",
     "standard": "^11.0.0",
