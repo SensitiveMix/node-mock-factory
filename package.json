@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/sunNode/node-mock-factory#readme",
   "devDependencies": {
-    "async": "^2.1.4",
+    "async": "2.5.0",
     "chai": "^4.0.2",
     "coveralls": "^3.0.0",
     "expect": "^22.4.0",
