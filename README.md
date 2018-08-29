@@ -9,6 +9,8 @@
 [![CircleCI](https://circleci.com/gh/SensitiveMix/node-mock-factory/tree/master.svg?style=shield&circle-token=18fe4ac495f7430045c2f9e57f33acd7b866023a)](https://circleci.com/gh/SensitiveMix/node-mock-factory/tree/master)
 [![Coverage Status](https://coveralls.io/repos/github/BTCChina/phoenix-kyc-service/badge.svg?branch=jack-dev&t=gfYVZa)](https://coveralls.io/github/BTCChina/phoenix-kyc-service?branch=jack-dev)
 
+[![Known Vulnerabilities](https://snyk.io/test/github/SensitiveMix/node-mock-factory/badge.svg?targetFile=package.json)](https://snyk.io/test/github/SensitiveMix/node-mock-factory?targetFile=package.json)
+
 
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
