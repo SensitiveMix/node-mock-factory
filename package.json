@@ -30,7 +30,7 @@
     "mocha": "^6.0.0",
     "mockserver": "^3.0.0",
     "multiline": "^2.0.0",
-    "rimraf": "^2.6.3",
+    "rimraf": "^3.0.0",
     "standard": "^13.0.1",
     "touch": "^3.0.0"
   },
